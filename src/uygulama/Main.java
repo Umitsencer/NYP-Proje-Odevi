@@ -71,9 +71,13 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.print("Sepetten çıkarmak istediğiniz ürünün ID'sini girin: ");
-                    int cikarilacakId = scanner.nextInt();
-                    sepet.sepettenCikar(cikarilacakId);
+                    if (sepet.urunler.isEmpty()) {
+                        System.out.println("HATA: Sepet boş! Sepetten ürün çıkarmak için önce ürün eklemelisiniz.");
+                    } else {
+                        System.out.print("Sepetten çıkarmak istediğiniz ürünün ID'sini girin: ");
+                        int cikarilacakId = scanner.nextInt();
+                        sepet.sepettenCikar(cikarilacakId);
+                    }
                     break;
                 case 4:
                     sepet.sepetiGoster();

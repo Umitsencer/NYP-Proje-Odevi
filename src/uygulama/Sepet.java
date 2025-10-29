@@ -1,6 +1,7 @@
 package uygulama;
 
 // ArrayList ve List sınıflarını projemize dahil ediyoruz.
+
 import modeller.Urun;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class Sepet {
      * Bu nedenle, bu tek listeye hem Giyim hem de Ayakkabi nesnelerini aynı anda ekleyebiliriz.
      * İşte bu duruma Çok Biçimlilik (Polymorphism) denir.
      */
-    private List<Urun> urunler;
+    List<Urun> urunler;
 
     /**
      * Sepet sınıfının Yapıcı Metotu (Constructor).
